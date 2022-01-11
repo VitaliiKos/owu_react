@@ -1,0 +1,22 @@
+.missionInfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid yellowgreen;
+    width: 95%;
+    margin: 5px auto;
+    padding: 5px;
+}
+.Mission{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    font-size: 20px;
+    flex-wrap: nowrap;
+
+}
+
+img{
+    max-width: 256px;
+}
