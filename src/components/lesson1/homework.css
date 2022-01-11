@@ -1,0 +1,6 @@
+.userInfo, .postInfo, .commentInfo{
+    border: 2px solid yellowgreen;
+    width: 95%;
+    margin: 5px auto;
+
+}
