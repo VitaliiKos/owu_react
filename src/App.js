@@ -1,5 +1,5 @@
 import './App.css';
-import Rockets from "./components/lesson1/Mission/Rockets";
+import Rockets from "./components/Mission/Rockets";
 function App() {
     return (
         <div className="App">
