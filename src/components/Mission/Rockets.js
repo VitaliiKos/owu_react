@@ -1,14 +1,20 @@
 import {useEffect, useState} from "react";
+
 import Rocket from "./Rocket";
 
 const Rockets = () => {
     const [rockets, setRockets] = useState([]);
 
     useEffect( ()=>{
+        let filterFlights;
         fetch('https://api.spacexdata.com/v3/launches/')
             .then(value => value.json())
             .then(flights =>
-                setRockets(flights.filter(flight=>flight.launch_year !== '2020')))
+                {
+                    filterFlights = flights.filter(flight => flight.launch_year !== '2020')
+                    setRockets(filterFlights);
+                })
+
     }, [])
     return(
         <div>
