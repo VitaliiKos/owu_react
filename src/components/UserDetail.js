@@ -1,10 +1,11 @@
 import React from 'react';
+import '../css/userDdetail.css';
 
 const UserDetail = (props) => {
     const {item: {id, name, username, email,
         address:{street, suite, city, zipcode,
             geo:{lat, lng}}, phone, website,
-        company:{catchPhrase, bs}}, styleClassname, getPosts} = props
+        company:{catchPhrase, bs}}, styleClassname, getPosts} = props;
 
     return (
         <div className={styleClassname}>

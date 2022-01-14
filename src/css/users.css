@@ -8,39 +8,20 @@
 .userList{
     font-size: 18px;
 }
-
-.UserDetail{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    margin: 5px;
-    font-size: 18px;
-}
 .Users{
 width: 100%;
 }
-
 .userBtn{
     background: cornflowerblue;
     font-size: 18px;
     margin: 10px 20px;
     border-radius: 10px;
 }
-.detail{
-    width: 55%;
-}
 .list{
     width: 40%;
 }
-.posts{
-    width: 100%;
-}
-.posts>div{
-    padding: 5px 20px;
-}
-.posts>div, .posts, .list,.detail,.userList
+.list,.userList
 {
     border: 2px solid yellowgreen;
     margin: 5px;
-
 }

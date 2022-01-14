@@ -21,4 +21,4 @@ export const userService = {
     getAll,
     getById,
     getPosts
-}
+};

@@ -1,0 +1,15 @@
+.UserDetail{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin: 5px;
+    font-size: 18px;
+}
+.detail{
+    width: 55%;
+}
+.detail
+{
+    border: 2px solid yellowgreen;
+    margin: 5px;
+}

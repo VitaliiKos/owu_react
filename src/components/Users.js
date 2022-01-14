@@ -4,7 +4,7 @@ import User from "./User";
 import {userService} from "../service/user.service";
 import UserDetail from "./UserDetail";
 import Posts from "./Posts";
-import '../css/style.css'
+import '../css/users.css';
 
 const Users = () => {
     const [users, setUsers] = useState([]);
@@ -13,17 +13,17 @@ const Users = () => {
 
     useEffect(() => {
         userService.getAll()
-                .then(value => setUsers(value))
-        }, [])
+                .then(value => setUsers(value));
+        }, []);
 
     const getUserId = (id)=>{
         userService.getById(id)
-            .then(value => setUser(value))
-    }
+            .then(value => setUser(value));
+    };
 
    const getPosts = (id)=>{
         userService.getPosts(id)
-            .then(value => setPost(value))
+            .then(value => setPost(value));
     }
 
     return (
@@ -36,9 +36,7 @@ const Users = () => {
             </div>
 
                 {user && <div className={'detail'}><UserDetail item={user} getPosts={getPosts} styleClassname={'UserDetail'}/></div>}
-
                 {post && <div className={'posts'}>{post.map(value => <Posts key={value.id} item={value}/>)}</div>}
-
         </div>
     );
 };

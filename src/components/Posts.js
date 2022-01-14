@@ -1,7 +1,9 @@
 import React from 'react';
 
+import '../css/posts.css';
+
 const Posts = (props) => {
-    const {item:{id, title, userId, body}} = props
+    const {item:{id, title, userId, body}} = props;
     return (
         <div>
             <div><strong>id:</strong> {id}</div>
