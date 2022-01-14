@@ -9,15 +9,15 @@ const Users = (props) => {
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
-            let filterUser
-            userService.getAll()
+        let filterUser
+        userService.getAll()
             .then(value =>{
                 filterUser = value.filter(person =>
-                person.name.includes(name) &&
-                person.username.includes(username) &&
-                person.email.includes(email))
+                    person.name.includes(name) &&
+                    person.username.includes(username) &&
+                    person.email.includes(email))
                 setUsers(filterUser)
-        })
+            })
     },[email, name, username])
     return (
         <div>
