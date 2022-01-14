@@ -1,7 +1,6 @@
-import './App.css';
-
 import Users from "./components/Users";
 import {useState} from "react";
+import './App.css';
 
 function App() {
     const [form, setForm]=useState({name: '', username: '', email: ''});
@@ -13,13 +12,12 @@ function App() {
     }
   return (
     <div className="App">
-      <form onSubmit={userFilter}>
+      <form onSubmit={userFilter} className={'filterForm'}>
           <div><label>Name: <input type="text" name={'name'} value={form.name} onChange={onChange}/></label></div>
           <div><label> Username: <input type="text" name={'username'} value={form.username} onChange={onChange}/></label></div>
           <div><label>Email: <input type="text" name={'email'} value={form.email} onChange={onChange}/></label></div>
-          <button>Submit</button>
       </form>
-      <Users item={form}/>;
+      <Users item={form}/>
     </div>
   );
 }

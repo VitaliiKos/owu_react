@@ -2,10 +2,10 @@ import React, {useEffect, useState} from 'react';
 
 import {userService} from "../services/user.service";
 import User from "./User";
-import '../css/style.css'
+import '../css/users.css';
 
 const Users = (props) => {
-    const {item:{name,username,email}} = props
+    const {item:{name,username,email}} = props;
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
