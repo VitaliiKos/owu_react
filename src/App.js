@@ -1,5 +1,6 @@
-import Users from "./components/Users";
 import {useState} from "react";
+
+import Users from "./components/Users";
 import './App.css';
 
 function App() {
