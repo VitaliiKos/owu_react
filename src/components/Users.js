@@ -13,18 +13,19 @@ const Users = () => {
 
     useEffect(() => {
         userService.getAll()
-                .then(value => setUsers(value));
-        }, []);
+            .then(value => setUsers(value));
+    }, []);
 
-    const getUserId = (id)=>{
+    const getUserId = (id) => {
         userService.getById(id)
             .then(value => setUser(value));
     };
 
-   const getPosts = (id)=>{
+    const getPosts = (id) => {
         userService.getPosts(id)
             .then(value => setPost(value));
     }
+
 
     return (
         <div className={'userBlock'}>
@@ -32,11 +33,12 @@ const Users = () => {
             <div className={'list'}>
                 <h3>User list</h3>
                 {users.map(value => <User key={value.id} item={value} styleClass={'userList'}
-                                         getUserID={getUserId} getPosts={getPosts}/>)}
+                                          getUserID={getUserId} getPosts={getPosts}/>)}
             </div>
 
-                {user && <div className={'detail'}><UserDetail item={user} getPosts={getPosts} styleClassname={'UserDetail'}/></div>}
-                {post && <div className={'posts'}>{post.map(value => <Posts key={value.id} item={value}/>)}</div>}
+            {user &&
+            <div className={'detail'}><UserDetail item={user} getPosts={getPosts} styleClassname={'UserDetail'}/></div>}
+            {post && <div className={'posts'}>{post.map(value => <Posts key={value.id} item={value}/>)}</div>}
         </div>
     );
 };

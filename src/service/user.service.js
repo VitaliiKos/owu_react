@@ -12,10 +12,8 @@ const getById =(id)=>{
 
 const getPosts =(id)=>{
     return fetch(`${urls.posts}${id}`)
-    .then(value => value.json());
+        .then(value => value.json());
 }
-
-
 
 export const userService = {
     getAll,
