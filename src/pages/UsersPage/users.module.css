@@ -1,14 +1,16 @@
-.usersPage{
+.usersPage {
     display: flex;
     flex-wrap: nowrap;
 }
-.usersList{
+
+.usersList {
     width: 40%;
 }
-.usersInfo{
+
+.usersInfo {
     width: 60%;
 }
 
-.user_button button:hover{
+.user_button button:hover {
     background-color: #e06b1a;
 }

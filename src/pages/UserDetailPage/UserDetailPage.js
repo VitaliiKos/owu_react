@@ -9,13 +9,13 @@ const UserDetailPage = () => {
     const location = useLocation();
     const user = location.state
     const [chooseUser, setChooseUser] = useState(null);
-    useEffect(()=>{
-        if(user){
+    useEffect(() => {
+        if (user) {
             setChooseUser(user)
             return
         }
         userService.getById(params.id).then(value => setChooseUser(value))
-    },[params.id, user])
+    }, [params.id, user])
 
     return (
         <div>

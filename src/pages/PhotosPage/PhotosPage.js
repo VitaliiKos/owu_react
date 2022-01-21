@@ -1,24 +1,21 @@
 import React, {useEffect, useState} from 'react';
-import {useLocation, useParams} from "react-router-dom";
+import {useParams} from "react-router-dom";
 
 import {albumsService} from "../../services/albums.service";
-import {Photo, UserPosts} from "../../components";
+import {Photo} from "../../components";
+import css from './photoPage.module.css'
 
 const PhotosPage = () => {
-    const params = useParams();
-    const photoId = params.photoId
-    const location = useLocation();
-    console.log( photoId)
-    console.log( location.state)
+    const {albumId} = useParams();
 
     const [photos, setPhoto] = useState([]);
-    useEffect(()=>{
-        albumsService.getPhotos(location.state).then(value => setPhoto(value))
-    },[location.state])
-    console.log( albumsService.getPhotos(location.state))
+
+    useEffect(() => {
+        albumsService.getPhotos(albumId).then(value => setPhoto(value))
+    }, [albumId])
 
     return (
-        <div>
+        <div className={css.wrap}>
             {photos.map(photo => <Photo key={photo.id} item={photo}/>)}
         </div>
     );

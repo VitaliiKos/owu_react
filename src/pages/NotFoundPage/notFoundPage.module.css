@@ -1,0 +1,9 @@
+.notPage {
+    border: 2px solid #e06b1a;
+    display: flex;
+    justify-content: center;
+    background-color: #f67d32;
+    font-size: 22px;
+    color: #730505;
+
+}

@@ -1,4 +1,4 @@
-.header{
+.header {
     min-height: 70px;
     background-color: black;
     display: flex;
@@ -6,7 +6,8 @@
     align-items: center;
     gap: 20px;
 }
-.header a{
+
+.header a {
     font-size: 30px;
     color: snow;
     text-decoration: none;

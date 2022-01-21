@@ -15,7 +15,7 @@ const PostDetailPage = () => {
             setChosePost(userPost)
             return
         }
-            postService.getById(userPost.id).then(value => setChosePost({...value}))
+        postService.getById(userPost.id).then(value => setChosePost({...value}))
     }, [userPost]);
 
     return (

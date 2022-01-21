@@ -10,11 +10,11 @@
 
 }
 
-.post_block{
+.post_block {
     display: flex;
 }
 
-.post_detail_block{
+.post_detail_block {
     display: flex;
     flex-direction: column;
     width: 38%;

@@ -12,6 +12,7 @@ import {
 } from "./pages";
 
 function App() {
+
     return (
         <>
             <Routes>
@@ -19,12 +20,15 @@ function App() {
                     <Route index element={<Navigate to={'users'}/>}/>
 
                     <Route path={'users'} element={<UsersPage/>}>
+
                         <Route path={':id'} element={<UserDetailPage/>}>
                             <Route path={'posts'} element={<UserPostsPage/>}/>
                         </Route>
-                        <Route path={':albumId/albums'} element={<UserAlbumsPage/>}>
-                            <Route path={`:photoId/photos`} element={<PhotosPage/>}/>
+
+                        <Route path={':id/albums'} element={<UserAlbumsPage/>}>
+                            <Route path={`:albumId/photos`} element={<PhotosPage/>}/>
                         </Route>
+
                     </Route>
 
                     <Route path={'posts'} element={<PostsPage/>}>

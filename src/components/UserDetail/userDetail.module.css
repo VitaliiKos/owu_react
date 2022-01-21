@@ -1,4 +1,4 @@
-.userInfo{
+.userInfo {
     display: flex;
     border: 3px solid cornflowerblue;
     flex-direction: column;
@@ -8,22 +8,26 @@
     font-size: 18px;
     background-color: #b2f6f6;
 }
-.userAddress,.userGeo, .userCompany{
+
+.userAddress, .userGeo, .userCompany {
     margin-left: 25px;
 }
-.userInfo h4{
+
+.userInfo h4 {
     margin: 5px;
 }
-.userInfo>a>button{
+
+.userInfo > a > button {
     width: 90%;
 }
-.allUserPosts{
+
+.allUserPosts {
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
     justify-content: center;
 }
 
-.allUserPosts button:hover{
+.allUserPosts button:hover {
     background-color: #e06b1a;
 }

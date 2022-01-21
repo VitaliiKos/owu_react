@@ -1,29 +1,25 @@
 import React, {useEffect, useState} from 'react';
-import {Outlet, useLocation} from "react-router-dom";
+import {Outlet, useParams} from "react-router-dom";
 
 import {albumsService} from "../../services/albums.service";
-
 import css from './userAlbumPage.module.css'
-import {Albums} from "../../components/Albums/Albums";
+import {Albums} from "../../components";
 
 const UserAlbumsPage = () => {
+    const {id} = useParams();
 
-    const location = useLocation();
-    const albumId = location.state
-    console.log(location)
-    const[albums, setAlbums] = useState([]);
+    const [albums, setAlbums] = useState([]);
 
-    useEffect(()=>{
+    useEffect(() => {
 
-        albumsService.getAlbumsById(albumId).then(value => setAlbums(value))
-    },[albumId])
-    console.log(albums)
+        albumsService.getAlbumsById(id).then(value => setAlbums(value))
+    }, [id])
 
     return (
         <div className={css.userAlbums}>
-            <div>{albums.map(albums => <Albums key={albums.id} item={albums}/>)}</div>
-            <div><Outlet/></div>
-            
+            {albums.map(albums => <Albums key={albums.id} item={albums}/>)}
+            <Outlet/>
+
         </div>
     );
 };

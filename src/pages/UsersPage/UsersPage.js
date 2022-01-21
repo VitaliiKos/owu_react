@@ -2,14 +2,14 @@ import React, {useEffect, useState} from 'react';
 import {Outlet} from "react-router-dom";
 
 import {userService} from "../../services/user.service";
-import css from './users.module.css';
 import {Users} from "../../components";
+import css from './users.module.css';
 
 const UsersPage = () => {
     const [users, setUsers] = useState([]);
-    useEffect(()=>{
+    useEffect(() => {
         userService.getAll().then(value => setUsers([...value]))
-    },[])
+    }, [])
 
     return (
         <div className={css.usersPage}>

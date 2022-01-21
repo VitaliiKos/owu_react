@@ -13,7 +13,6 @@ const DetailPost = ({choosePost}) => {
                 <h3>UserId: {choosePost.userId}</h3>
                 <h3>Title: {choosePost.title}</h3>
                 <em><h3>Body:</h3> {choosePost.body}</em>
-                {/*<Link to={choosePost.id + '/comments'} state={{...choosePost}}>*/}
                 <Link to={'comments'} state={{...choosePost}}>
                     <button>All Comments</button>
                 </Link>

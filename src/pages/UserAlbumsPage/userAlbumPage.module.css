@@ -1,11 +1,13 @@
-.userAlbums{
+.userAlbums {
     display: flex;
     flex-wrap: wrap;
-    flex-grow: 3;
+    width: 100%;
 }
-.albumInfo{
+
+.albumInfo {
     display: flex;
 }
-.photoInfo{
+
+.photoInfo {
     display: flex;
 }

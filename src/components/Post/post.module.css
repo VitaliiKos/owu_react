@@ -1,4 +1,4 @@
-.post_title{
+.post_title {
     border: 2px solid #e06b1a;
     padding: 5px 15px;
     margin: 5px;
@@ -8,7 +8,8 @@
     background-color: #ceeaa6;
 
 }
-button{
+
+button {
     padding: 5px 10px;
     border-radius: 15px;
     font-size: 18px;
