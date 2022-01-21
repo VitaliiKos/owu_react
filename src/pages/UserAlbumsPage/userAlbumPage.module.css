@@ -1,0 +1,11 @@
+.userAlbums{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 3;
+}
+.albumInfo{
+    display: flex;
+}
+.photoInfo{
+    display: flex;
+}

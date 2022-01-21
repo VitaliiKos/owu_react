@@ -1,0 +1,17 @@
+.post_title{
+    border: 2px solid #e06b1a;
+    padding: 5px 15px;
+    margin: 5px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ceeaa6;
+
+}
+button{
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 18px;
+    background-color: #98b0e0;
+    margin: 5px;
+}

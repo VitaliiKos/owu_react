@@ -1,0 +1,25 @@
+
+.postList {
+    width: 60%;
+}
+
+.postList {
+    border: 3px solid #e06b1a;
+    padding: 10px;
+    margin: 5px;
+
+}
+
+.post_block{
+    display: flex;
+}
+
+.post_detail_block{
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+}
+
+.post_detail_block, .postList {
+    font-size: 22px;
+}

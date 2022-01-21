@@ -1,0 +1,11 @@
+.postDetail {
+    border: 3px solid #e06b1a;
+    padding: 15px;
+    margin: 5px;
+    background-color: #f3d350;
+
+}
+.postDetail button{
+    width: 100%;
+}
+

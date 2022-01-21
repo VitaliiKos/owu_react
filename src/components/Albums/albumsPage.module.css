@@ -1,0 +1,26 @@
+.albums{
+    border: 3px solid cornflowerblue;
+    padding: 10px;
+    margin: 10px;
+    width: 90%;
+    background-color: #b2f6f6;
+    font-size: 18px;
+}
+.albums h3{
+    margin: 0;
+}
+.albumsButton{
+    display: flex;
+    width: 100%;
+    margin: 5px auto;
+}
+.albums a{
+    width: 100%;
+}
+.albums button{
+    width: 100%;
+    padding: 5px;
+}
+.albums button:hover{
+    background-color: #e06b1a;
+}
