@@ -11,7 +11,7 @@ const Albums = ({item}) => {
             <h3>UserId: {userId}</h3>
             <h3>Title: {title}</h3>
             <div className={css.albumsButton}>
-                <Link to={`${id}/photos`} state={id}>
+                <Link to={`${id}/photos`} state={item.id}>
                     <button>All photos >></button>
                 </Link>
             </div>

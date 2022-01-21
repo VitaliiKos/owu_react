@@ -1,3 +1,4 @@
+export * from './Albums/Albums'
 export * from './Comment/Comment';
 export * from  './DetailPost/DetailPost';
 export * from './Header/Header';

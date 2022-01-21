@@ -1,4 +1,3 @@
-export * from '../components/Albums/Albums'
 export * from './NotFoundPage/NotFoundPage';
 export * from './PostCommentsPage/PostCommentsPage';
 export * from './PostDetailPage/PostDetailPage';
