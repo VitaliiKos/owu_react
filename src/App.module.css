@@ -1,0 +1,79 @@
+.container{
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 20px;
+  width: 100%;
+}
+.formContent, .carsContent{
+  border: 2px solid cornflowerblue;
+  padding: 15px;
+  margin: 15px;
+}
+.formContent{
+  width: 40%;
+}
+.carsContent{
+  width: 55%;
+}
+.form{
+  width: 100%;
+}
+[type=number],  [type=text]{
+  display: block;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+  padding: .75rem;
+  outline: none;
+  background: transparent;
+  margin-bottom: .5rem;
+  font-size: 1.4rem;
+  width: 90%;
+  max-width: 100%;
+  line-height: 1; }
+
+[type=number]:hover, [type=text]:hover{
+  border: 1px solid #b4b4b4; }
+
+[type=number]:focus, [type=number]:active, [type=text]:focus, [type=text]:active{
+  border: 1px solid #0366EE;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #8cbcfe; }
+
+button, [type=submit] {
+  -webkit-appearance: none;
+  display: inline-block;
+  border: 1px solid #0366EE;
+  border-radius: 10px;
+  background: #0366EE;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  text-transform: none;
+  padding: .75rem 1.55rem;
+  margin: 0 0 .5rem 0;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1; }
+
+button:hover{
+  border: 1px solid #0250bc;
+  background: #0250bc;
+  color: #ffffff;
+  text-decoration: none; }
+
+button:focus, button:active{
+  border: 1px solid #0250bc;
+  background: #0250bc;
+  color: #ffffff;
+  text-decoration: none; }
+
+h2{
+  font-size: 30px;
+  font-style: italic;
+  color: #1462d3;
+  background: #8cbcfe;
+  padding: 10px 30px;
+  border-radius: 20px;
+}

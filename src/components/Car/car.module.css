@@ -1,0 +1,14 @@
+.car {
+    padding: 10px 20px;
+    background: #f3f0f0;
+    margin: 5px;
+    border: 2px solid #0250bc;
+}
+
+button {
+    margin: 5px;
+}
+
+.car > h3 {
+    font-size: 22px;
+}
