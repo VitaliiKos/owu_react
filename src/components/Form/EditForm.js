@@ -24,6 +24,7 @@ const EditForm = ({updateCar: {id, model, price, year}, refresh}) => {
         try {
             const newCar = await carService.updateById(id, car);
             refresh(newCar)
+            alert(`Ви внесли зміни до автомобіля: Id-${id}, ${car.model}`)
 
         } catch (error) {
             setFormError(error.response.data)
