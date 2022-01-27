@@ -8,7 +8,7 @@ function App() {
     return (
 
         <div className="App">
-            <h1>Hello</h1>
+            <h1>New "OLD" game :)</h1>
             <Lesson4 startValue1={100} startValue2={50} startValue3={0}/>
         </div>
     );
