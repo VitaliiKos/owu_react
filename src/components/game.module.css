@@ -1,0 +1,74 @@
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #542a07;
+    padding: 5px;
+}
+
+.heroAttac {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heroAttac div {
+    align-content: space-between;
+}
+
+.heroHelp {
+
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background: #e1e1e1;
+}
+
+.target {
+    width: 40%;
+}
+
+.log {
+    width: 100%;
+}
+
+.heroBtn {
+    width: 100%;
+    align-content: space-between;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    padding: 5px;
+    margin: 3px;
+}
+
+h4 {
+    margin: 2px;
+}
+
+.heroImg {
+    width: 40%;
+}
+
+.heroAvatar {
+    height: 100%;
+}
+
+.damage {
+    border: 2px solid maroon;
+    background: #29ebfd;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.targetImg {
+    width: 100%;
+    margin: 5px;
+}
