@@ -1,0 +1,16 @@
+.App {
+    text-align: center;
+}
+
+.catList, .dogList {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.animal {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}

@@ -1,26 +1,12 @@
-.catList, .dogList{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-}
-.animal{
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-}
-button{
+button {
     padding: 5px 15px;
     margin: 5px;
     background: #30e5d4;
     border-radius: 15px;
 }
-.animalForm{
+
+.animalForm {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
 }
-.formCat{
-    /*background: #a1e0ec;*/
-}
-.formDog{}
