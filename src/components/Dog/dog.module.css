@@ -1,0 +1,9 @@
+.dog{
+    border: 2px solid coral;
+    display: flex;
+    justify-content: space-around;
+    background: #e5bf68;
+    margin: 5px;
+    border-radius: 20px;
+
+}

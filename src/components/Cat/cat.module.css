@@ -1,0 +1,8 @@
+.cat{
+    border: 2px solid cornflowerblue ;
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+    background: #a1e0ec;
+    border-radius: 20px;
+}
