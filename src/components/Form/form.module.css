@@ -1,0 +1,37 @@
+.form {
+    display: flex;
+    border: 2px solid #a19e9e;
+    padding: 10px 5px;
+    margin: 5px auto;
+    width: 95%;
+    background: #c4c2c2;
+    border-radius: 35px;
+
+}
+
+form {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.blockInput {
+    display: flex;
+    width: 70%;
+    margin: 10px auto;
+    justify-content: space-around;
+}
+
+input {
+    margin: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 14px;
+    border-radius: 15px;
+}
+
+form > button {
+    width: 50%;
+    padding: 5px;
+    font-size: 18px;
+}

@@ -1,19 +1,21 @@
 import React from 'react';
 import {useDispatch} from "react-redux";
-import {carDelete} from "../../store";
-// import {useSelector} from "react-redux";
 
-const Car = ({car:{id, model, price, year}}) => {
+import {carDelete, carToUpdate} from "../../store";
+import css from './car.module.css'
+
+const Car = ({car}) => {
+    const {id, model, price, year} = car
     const dispatch = useDispatch();
-    return (
-        <div>
-            <h3>ID:{id}</h3>
-            <h3>Model:{model}</h3>
-            <h3>Price:{price}</h3>
-            <h3>Year:{year}</h3>
-            <button onClick={()=>dispatch(carDelete({id}))}>Delete</button>
-            <hr/>
 
+    return (
+        <div className={css.car}>
+            <h4>ID: {id}</h4>
+            <h4>Model: {model}</h4>
+            <h4>Price: {price}</h4>
+            <h4>Year: {year}</h4>
+            <button onClick={() => dispatch(carDelete({id}))}>Delete</button>
+            <button onClick={() => dispatch(carToUpdate({car}))}>Update</button>
         </div>
     );
 };
