@@ -13,7 +13,6 @@ function showSum(a, b) {
 }
 function incAge(someUser, inc) {
     someUser.age += inc;
-    console.log(someUser);
     return someUser;
 }
 console.log(sum(1, 2));
