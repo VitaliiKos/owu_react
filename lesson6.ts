@@ -25,7 +25,6 @@ const starLink: IRocket = {
     },
 }
 const printMissionName = (rocket:IRocket):string=>{
-    console.log(rocket.mission_name)
     return rocket.mission_name
 }
 
