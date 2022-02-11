@@ -1,0 +1,61 @@
+.genreButton{
+    width: 18%;
+}
+.genreButton button{
+    width: 100%;
+    border-radius: 15px;
+    margin: 5px auto;
+    padding: 5px;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f3c5bd+0,e86c57+50,ea2803+51,ff6600+75,c72200+100;Red+Gloss */
+    background: rgb(243,197,189); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(243,197,189,1) 0%, rgba(232,108,87,1) 50%, rgba(234,40,3,1) 51%, rgba(255,102,0,1) 75%, rgba(199,34,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(243,197,189,1) 0%,rgba(232,108,87,1) 50%,rgba(234,40,3,1) 51%,rgba(255,102,0,1) 75%,rgba(199,34,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(243,197,189,1) 0%,rgba(232,108,87,1) 50%,rgba(234,40,3,1) 51%,rgba(255,102,0,1) 75%,rgba(199,34,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 ); /* IE6-9 */
+
+
+}
+.genreButton button:hover{
+    background-color: yellowgreen;
+    border-radius: 15px;
+}
+.genreButton button:active {
+    background: #ddf504;
+}
+.genreList{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 25px 15px;
+    flex-grow: 5;
+    border-radius: 35px;
+    margin: 5px 5px 10px 10px;
+
+    background: rgb(174,188,191); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(174,188,191,1) 1%, rgba(10,8,9,1) 18%, rgba(110,119,116,1) 64%, rgba(110,119,116,1) 68%, rgba(10,8,9,1) 97%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(174,188,191,1) 1%,rgba(10,8,9,1) 18%,rgba(110,119,116,1) 64%,rgba(110,119,116,1) 68%,rgba(10,8,9,1) 97%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(174,188,191,1) 1%,rgba(10,8,9,1) 18%,rgba(110,119,116,1) 64%,rgba(110,119,116,1) 68%,rgba(10,8,9,1) 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0809',GradientType=0 ); /* IE6-9 */
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.currentGenre{
+    width: fit-content;
+    margin: 10px auto;
+    padding: 5px 20px;
+    border-radius: 25px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a90329+25,6d0019+93,6d0019+100 */
+    background: rgb(169,3,41); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(169,3,41,1) 25%, rgba(109,0,25,1) 93%, rgba(109,0,25,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(169,3,41,1) 25%,rgba(109,0,25,1) 93%,rgba(109,0,25,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(169,3,41,1) 25%,rgba(109,0,25,1) 93%,rgba(109,0,25,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+}
+.currentGenre h3{
+    margin: 0;
+    color: #2ef5dc;
+}

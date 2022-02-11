@@ -1,0 +1,33 @@
+.actorPosterDescription{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 5px;
+}
+.actorPosterDescription h5{
+    margin: 0;
+}
+
+.actorPoster{
+    width: 100%;
+    background-color: rgba(229, 80, 80, 0.56);
+    display: flex;
+    align-items: flex-start;
+
+}
+.actorPoster img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.actorDetail{
+    border: 1px solid cornflowerblue ;
+    margin: 2px;
+    background-color: rgba(243, 241, 221, 0.86);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 5px;
+
+    width: 9%;
+}

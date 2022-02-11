@@ -1,0 +1,60 @@
+.detailCard{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 9;
+    column-gap: 5px;
+
+
+
+}
+.moviePoster{
+    width: 37%;
+    background-color: rgba(5, 5, 5, 0.56);
+    padding: 20px;
+    max-height: 597px;
+    display: flex;
+    align-items: center;
+
+}
+.moviePoster img{
+    max-width: 80%;
+    max-height: 597px;
+    margin: auto;
+}
+
+.movieDetail{
+    background-color: rgba(19, 19, 19, 0.86);
+    color: #c0c0c0;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 617px;
+
+}
+.moviePosterDescription{
+    display: flex;
+    flex-direction: column;
+
+    width: 62%;
+    height: 617px;
+    padding: 5px 10px;
+    align-items: flex-start;
+
+}
+.genreList{
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 5px;
+    font-size: 14px;
+}
+.movieMark{
+    display: flex;
+    background: #167898;
+    padding: 15px;
+    border-radius: 45%;
+    font-family: iviSans,Arial,Helvetica,Helvetica Neue,FreeSans,sans-serif
+}
+.movieMark h3{
+    color: #efd33d;
+    margin: 0;
+
+}

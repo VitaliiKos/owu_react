@@ -1,0 +1,25 @@
+.moviePoster{
+    width: 100%;
+}
+.moviePoster>img{
+    width: 100%;
+}
+.movieCard{
+    width: 17%;
+    border: 2px solid cornflowerblue;
+    /*margin: 3px;*/
+    padding: 5px;
+}
+.movieCardTitle{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /*column-gap: 3px;*/
+    /*row-gap: 3px;*/
+}
+
+.movieCard a{
+    text-decoration: none;
+    color: #8aaf35;
+}
