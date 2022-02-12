@@ -8,8 +8,8 @@ const Header = () => {
     return (
         <div>
             <div className={css.header}>
-                {/*<NavLink to="/">Home</NavLink>*/}
                 <NavLink to="/movies">Home</NavLink>
+                <NavLink to="/user">Profile</NavLink>
             </div>
 
         </div>

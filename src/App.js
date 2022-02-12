@@ -1,7 +1,8 @@
-import css from './App.module.css';
+import {Route, Routes} from "react-router-dom";
+
 import {GenreBadge, Layout, MovieInfo} from "./components";
-import {Navigate, Route, Routes} from "react-router-dom";
-import {MoviesPage, NotFoundPage} from "./pages";
+import {MoviesPage, NotFoundPage, UserInfoPage} from "./pages";
+import css from './App.module.css';
 
 function App() {
 
@@ -10,11 +11,12 @@ function App() {
             <div className={css.App}>
                 <Routes>
                     <Route path={'/'} element={<Layout/>}>
-                        <Route index element={<Navigate to={'movies'}/>}/>
+                        {/*<Route index element={<Navigate to={'movies'}/>}/>*/}
                         <Route path={'movies'} element={<MoviesPage/>}>
                             <Route path={''} element={<GenreBadge/>}/>
                             <Route path={':id'} element={<MovieInfo/>}/>
                         </Route>
+                        <Route path={'user'} element={<UserInfoPage/>}/>
                         <Route path={'*'} element={<NotFoundPage/>}/>
                     </Route>
                 </Routes>

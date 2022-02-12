@@ -17,6 +17,7 @@ const MovieDetailCard = ({movieItem}) => {
         runtime,
         vote_average
     } = movieItem;
+
     const sectionStyle = {
         width: "100%",
         height: "617px",
@@ -36,18 +37,18 @@ const MovieDetailCard = ({movieItem}) => {
                     </div>
 
                     <div className={css.moviePosterDescription}>
-                        <h3>{title}({release_date.split('-')[0]})</h3>
+                        <h1>{title}({release_date.split('-')[0]})</h1>
                         <div className={css.genreList}>
-                            <em>
+                            <h4>
                                 {release_date}
                                 {genres.map(moviegenre => ', ' + moviegenre.name)}
                                 {' ' + Math.floor(runtime / 60)}h {runtime % 60}m
-                            </em>
+                            </h4>
                         </div>
 
                         <h4><em>{tagline}</em></h4>
-                        <h3>Overview</h3>
-                        <em>{overview}</em>
+                        <h2>Overview</h2>
+                        <h4>{overview}</h4>
 
                         <h3>{movieItembudget}</h3>
                         <h3><a href={homepage}>{homepage}</a></h3>

@@ -1,12 +1,14 @@
 .actorsList{
     display: flex;
     flex-wrap: wrap;
-    /*background: #dcd6d6;*/
     margin-top:5px ;
     background-image: url("actors1.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    justify-content: space-around;
+    justify-content: center;
+    row-gap: 5px;
+    column-gap: 2px;
+
 
 }

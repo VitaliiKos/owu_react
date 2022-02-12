@@ -7,19 +7,32 @@
 .movieCard{
     width: 17%;
     border: 2px solid cornflowerblue;
-    /*margin: 3px;*/
     padding: 5px;
+    background: rgba(145, 5, 201, 0.5);
+}
+.movieCard:hover{
+    box-shadow: 0 0 10px 5px rgba(57, 215, 215, 0.8);
+
 }
 .movieCardTitle{
+    text-shadow: 10px 10px 10px #0a0a0a, 0 0 25px #e2f505, 0 0 5px #8b3500;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
-    /*column-gap: 3px;*/
-    /*row-gap: 3px;*/
-}
 
+}
+.movieCardTitle h3{
+    font-style: italic;
+    font-family: "Roboto Light", serif;
+}
 .movieCard a{
     text-decoration: none;
     color: #8aaf35;
+
+}
+.movieRating{
+}
+.movieRating h5{
+    margin: 0 0 10px;
 }

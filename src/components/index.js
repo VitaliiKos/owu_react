@@ -10,3 +10,4 @@ export * from './MovieListCard/MovieListCard';
 export * from './Layout/Layout';
 export * from './GenreCard/GenreCard';
 export * from './MovieDetailCard/MovieDetailCard';
+export * from './MovieListCard/MovieListCard';

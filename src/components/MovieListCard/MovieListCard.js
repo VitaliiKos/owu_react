@@ -18,7 +18,7 @@ const MovieListCard = ({moviesItem}) => {
 
                 <div className={css.movieCardTitle}>
                     <div><h3>{original_title}</h3></div>
-                    <div>
+                    <div className={css.movieRating}>
                         <h5>Vote average: {vote_average}</h5>
                         <h5>{release_date}</h5>
                     </div>

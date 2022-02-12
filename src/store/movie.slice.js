@@ -1,6 +1,6 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 
-import {actorsServices, genresServices, moviesServices} from "../services";
+import {actorsServices, famousActorServices, genresServices, moviesServices} from "../services";
 
 const initialState = {
     movies: [],
@@ -10,7 +10,8 @@ const initialState = {
     total_pages: null,
     total_results: null,
     movieDetails: null,
-    actors: []
+    actors: [],
+    myFamousActor:null
 }
 
 let getGenreId;
@@ -58,6 +59,17 @@ export const actorsGetAll = createAsyncThunk(
     async (movieId, {rejectedWithValue}) => {
         try {
             return await actorsServices.getActors(movieId)
+        } catch (e) {
+            return rejectedWithValue(e.message)
+        }
+    }
+)
+
+export const famousActor = createAsyncThunk(
+    'movieConstructor/famousActor',
+    async (_, {rejectedWithValue}) => {
+        try {
+            return await famousActorServices.getFamousActor()
         } catch (e) {
             return rejectedWithValue(e.message)
         }
@@ -122,6 +134,19 @@ const movieSlice = createSlice({
             state.status = 'rejected'
             state.error = action.payload
         },
+        // ***********************************
+        [famousActor.pending]: (state) => {
+            state.status = 'pending'
+            state.error = null
+        },
+        [famousActor.fulfilled]: (state, action) => {
+            state.myFamousActor = action.payload
+        },
+        [famousActor.rejected]: (state, action) => {
+            state.status = 'rejected'
+            state.error = action.payload
+        },
+
     }
 })
 
