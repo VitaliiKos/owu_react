@@ -2,8 +2,12 @@ import React from 'react';
 
 import {movieImages} from "../../config";
 import css from './userInfoCard.module.css'
+import {useSelector} from "react-redux";
 
 const UserInfoCard = ({myFamousActor}) => {
+
+    const {themeStatus} = useSelector(state => state['movieReducer']);
+
     const {
         biography,
         birthday,
@@ -16,7 +20,7 @@ const UserInfoCard = ({myFamousActor}) => {
 
     return (
         <div>
-            <div className={css.mainDetails}>
+            <div className={!themeStatus?css.mainDetails:css.mainDetailsLight}>
                 <div className={css.mainFoto}>
                     <img src={movieImages + profile_path} alt={name}/>
                 </div>
@@ -30,7 +34,9 @@ const UserInfoCard = ({myFamousActor}) => {
                 </div>
             </div>
 
-            <div className={css.userDescription}><h3>{biography}</h3></div>
+            <div className={!themeStatus?css.userDescription:css.userDescriptionLight}>
+                <h3>{biography}</h3>
+            </div>
 
         </div>
     );

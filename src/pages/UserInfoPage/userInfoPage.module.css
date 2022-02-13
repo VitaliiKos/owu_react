@@ -1,8 +1,15 @@
-.userPage{
-    background-image: url("userInfo.jpg");
-    height: 100%;
+.userPage, .userPageLight {
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
     padding: 20px 10px;
+}
+
+.userPage {
+    background-size: cover;
+    background-image: url("legendDark.jpg");
+}
+
+.userPageLight {
+    background-size: contain;
+    background-image: url("1.jpeg");
 }

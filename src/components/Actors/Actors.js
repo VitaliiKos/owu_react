@@ -7,7 +7,7 @@ import css from './actors.module.css'
 
 const Actors = ({movieId}) => {
 
-    const {actors: {cast}} = useSelector(state => state['movieReducer']);
+    const {actors: {cast}, themeStatus} = useSelector(state => state['movieReducer']);
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -16,7 +16,7 @@ const Actors = ({movieId}) => {
 
     return (
 
-        <div className={css.actorsList}>
+        <div className={!themeStatus?css.actorsList:css.actorsListLight}>
             {cast && cast.map(actor => <Actor key={actor.id} actor={actor}/>)}
         </div>
     );

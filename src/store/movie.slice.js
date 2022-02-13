@@ -11,7 +11,8 @@ const initialState = {
     total_results: null,
     movieDetails: null,
     actors: [],
-    myFamousActor:null
+    myFamousActor:null,
+    themeStatus:true
 }
 
 let getGenreId;
@@ -79,7 +80,11 @@ export const famousActor = createAsyncThunk(
 const movieSlice = createSlice({
     name: 'movieConstructor',
     initialState,
-    reducers: {},
+    reducers: {
+        chooseTheme: (state) => {
+            state.themeStatus = !state.themeStatus
+        }
+    },
     extraReducers: {
         [genreGetAll.pending]: (state) => {
             state.status = 'pending'
@@ -152,5 +157,6 @@ const movieSlice = createSlice({
 
 
 const movieReducer = movieSlice.reducer
+export const {chooseTheme} = movieSlice.actions
 
 export default movieReducer

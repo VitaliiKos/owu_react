@@ -7,7 +7,7 @@ import css from './movieList.module.css'
 
 const MovieList = () => {
 
-    const {movies, total_pages, page, genre} = useSelector(state => state['movieReducer'])
+    const {movies, total_pages, page, genre, themeStatus} = useSelector(state => state['movieReducer'])
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -26,7 +26,7 @@ const MovieList = () => {
             <div className={css.movieListPage}>
                 <div style={sectionStyle}><h3>Page: {page}</h3></div>
 
-                <div className={css.pageButtons}>
+                <div className={!themeStatus ? css.pageButtons : css.pageButtonsLights}>
 
                     <div onClick={() => dispatch(getByGenre({page: 1, genre}))}>
                         <button>Page 1</button>

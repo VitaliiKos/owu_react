@@ -2,15 +2,18 @@ import React from 'react';
 
 import {actorImages} from "../../config";
 import css from './actor.module.css'
+import {useSelector} from "react-redux";
 
 const Actor = ({actor}) => {
+
+    const {themeStatus} = useSelector(state => state['movieReducer']);
     const {name, character, profile_path, known_for_department} = actor;
 
     return (
 
         <>
             {profile_path &&
-            (<div className={css.actorDetail}>
+            (<div className={!themeStatus?css.actorDetail:css.actorDetailLight}>
                     <div className={css.actorPoster}>
                         <img src={actorImages + profile_path} alt={known_for_department}/>
                     </div>

@@ -8,7 +8,7 @@ import {GenreCard} from "../GenreCard/GenreCard";
 import {MovieList} from "../MovieList/MovieList";
 
 const GenreBadge = () => {
-    const {genres, genre} = useSelector(state => state['movieReducer'])
+    const {genres, genre, themeStatus} = useSelector(state => state['movieReducer'])
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -18,9 +18,10 @@ const GenreBadge = () => {
 
     return (
         < >
-            <div className={css.genreList}>
+            <div className={!themeStatus ? css.genreList : css.genreListLight}>
 
-                <div className={css.genreButton} onClick={() => dispatch(getByGenre({genre: ' ', page: 1}))}>
+                <div className={!themeStatus ? css.genreButton : css.genreButtonLight}
+                     onClick={() => dispatch(getByGenre({genre: ' ', page: 1}))}>
                     <NavLink to={''}>
                         <button>
                             All genres
@@ -30,7 +31,7 @@ const GenreBadge = () => {
 
                 {genres.map(genreItem => <GenreCard key={genreItem.id} genreItem={genreItem}/>)}
             </div>
-            <div className={css.currentGenre}>
+            <div className={!themeStatus ? css.currentGenre : css.currentGenreLight}>
                 <h3>Current genre:</h3>
                 <h3>{current_genre[0].name}</h3>
             </div>

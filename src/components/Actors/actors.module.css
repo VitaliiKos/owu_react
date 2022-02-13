@@ -1,14 +1,22 @@
-.actorsList{
+.actorsList, .actorsListLight {
     display: flex;
     flex-wrap: wrap;
-    margin-top:5px ;
-    background-image: url("actors1.jpg");
+    padding-top: 15px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
     row-gap: 5px;
     column-gap: 2px;
+    padding-bottom: 50px;
+}
 
+.actorsList {
+    background-image: url("actorsDark.jpg");
+
+}
+
+.actorsListLight {
+    background-image: url("actors1.png");
 
 }

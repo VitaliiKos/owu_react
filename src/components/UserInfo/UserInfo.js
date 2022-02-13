@@ -9,9 +9,9 @@ const UserInfo = () => {
     const {myFamousActor} = useSelector(state => state['movieReducer'])
     const dispatch = useDispatch();
 
-    useEffect(()=>{
+    useEffect(() => {
         dispatch(famousActor())
-    },[])
+    }, [])
 
     return (
         <div>

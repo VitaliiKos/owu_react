@@ -3,8 +3,12 @@ import React from 'react';
 import {movieImages} from "../../config";
 import css from './detailCard.module.css'
 import {Actors} from "../Actors/Actors";
+import {useSelector} from "react-redux";
 
 const MovieDetailCard = ({movieItem}) => {
+
+    const {themeStatus} = useSelector(state => state['movieReducer']);
+
     const {
         genres,
         id,
@@ -30,7 +34,7 @@ const MovieDetailCard = ({movieItem}) => {
     return (
         <>
             <div className={css.detailCard} style={sectionStyle}>
-                <div className={css.movieDetail}>
+                <div className={!themeStatus ? css.movieDetail : css.movieDetailLight}>
 
                     <div className={css.moviePoster}>
                         <img src={movieImages + movieItem.poster_path} alt=''/>
