@@ -1,18 +1,21 @@
-.mainFoto{
+.mainFoto {
     width: 25%;
 }
-.mainFoto img{
+
+.mainFoto img {
     width: 100%;
     border-radius: 50%;
     border: 3px solid #ddd;
     padding: 5px;
 }
-.mainFoto img:hover{
+
+.mainFoto img:hover {
     transform: scaleX(-1);
     box-shadow: 0 0 10px 5px rgba(186, 143, 0, 0.8);
 
 }
-.mainDetails, .mainDetailsLight{
+
+.mainDetails, .mainDetailsLight {
     border-radius: 35px;
     display: flex;
     flex-wrap: nowrap;
@@ -21,7 +24,8 @@
     text-shadow: 1px 1px 2px black, 0 0 25px #e2f505, 0 0 5px darkblue;
     font-size: 24px;
 }
-.userDescription, .userDescriptionLight{
+
+.userDescription, .userDescriptionLight {
     margin: 10px;
     padding: 10px 20px;
     font-style: italic;
@@ -29,28 +33,95 @@
     text-align: justify;
 }
 
-.mainDetails a, .mainDetailsLight a{
+.mainDetails a, .mainDetailsLight a {
     text-decoration: none;
     color: #eedc13;
 }
 
-.mainDetails{
+.mainDetails {
     color: white;
-    background: rgba(60,60,60,0.5);
+    background: rgba(60, 60, 60, 0.5);
 
 }
-.mainDetailsLight{
+
+.mainDetailsLight {
     color: #50030c;
     background: rgba(84, 214, 245, 0.5);
 }
-.userDescription{
-    background: rgba(60,60,60,0.5);
-    /*color: #d97b1c;*/
+
+.userDescription {
+    background: rgba(60, 60, 60, 0.5);
     color: white;
 
 }
-.userDescriptionLight{
+
+.userDescriptionLight {
     background: rgba(84, 214, 245, 0.8);
     color: #10100f;
 
 }
+
+@media screen and (max-width: 1200px) {
+    .mainDetails, .mainDetailsLight {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .mainFoto {
+        width: 55%;
+        margin: 20px;
+    }
+
+    .mainFoto img {
+        border-radius: 55px;
+    }
+
+    .mainDetailsLight {
+        background: rgba(84, 214, 245, 0.9);
+    }
+
+    .mainDetails {
+        background: rgba(60, 60, 60, 0.7);
+
+    }
+
+    .userDescriptionLight, .userDescription {
+        font-size: 22px;
+    }
+
+    .userDescription {
+        background: rgba(60, 60, 60, 0.8);
+    }
+
+    .userDescriptionLight {
+        background: rgba(84, 214, 245, 0.8);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .userDescriptionLight, .userDescription {
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .mainDetails, .mainDetailsLight {
+        font-size: 22px;
+    }
+
+    .userDescriptionLight, .userDescription {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .mainDetails a, .mainDetailsLight a {
+        font-size: 22px;
+    }
+
+
+}
+
+

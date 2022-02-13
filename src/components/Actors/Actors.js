@@ -16,7 +16,7 @@ const Actors = ({movieId}) => {
 
     return (
 
-        <div className={!themeStatus?css.actorsList:css.actorsListLight}>
+        <div className={!themeStatus ? css.actorsList : css.actorsListLight}>
             {cast && cast.map(actor => <Actor key={actor.id} actor={actor}/>)}
         </div>
     );

@@ -1,9 +1,10 @@
 import React from 'react';
+import {useSelector} from "react-redux";
 
 import {movieImages} from "../../config";
 import css from './detailCard.module.css'
 import {Actors} from "../Actors/Actors";
-import {useSelector} from "react-redux";
+import {StarRating} from "../StarsRating/StarsRating";
 
 const MovieDetailCard = ({movieItem}) => {
 
@@ -23,8 +24,6 @@ const MovieDetailCard = ({movieItem}) => {
     } = movieItem;
 
     const sectionStyle = {
-        width: "100%",
-        height: "617px",
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
@@ -59,6 +58,7 @@ const MovieDetailCard = ({movieItem}) => {
                         <div className={css.movieMark}>
                             <h3>{vote_average} / 10</h3>
                         </div>
+                        <div><StarRating/></div>
                     </div>
                 </div>
             </div>

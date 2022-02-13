@@ -1,11 +1,13 @@
-.layout, .layoutLight{
+.layout, .layoutLight {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.layout{
+
+.layout {
     background-image: url("3.jpg");
 }
+
 .layoutLight {
     background-image: url("4Light.jpg");
- }
+}

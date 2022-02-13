@@ -1,11 +1,16 @@
+.movieListContainer{
+    width: 100%;
+    padding: 5px;
+
+}
 .movieList {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    column-gap: 3px;
+    width: 96%;
+    column-gap: 2px;
     row-gap: 10px;
     justify-content: space-around;
-    padding: 20px;
+    padding: 10px;
 }
 
 .movieListPage {
@@ -63,3 +68,4 @@
 .genreTitle {
     color: #8aaf35;
 }
+

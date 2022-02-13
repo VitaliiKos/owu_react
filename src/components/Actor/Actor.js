@@ -1,8 +1,8 @@
 import React from 'react';
+import {useSelector} from "react-redux";
 
 import {actorImages} from "../../config";
 import css from './actor.module.css'
-import {useSelector} from "react-redux";
 
 const Actor = ({actor}) => {
 
@@ -13,7 +13,7 @@ const Actor = ({actor}) => {
 
         <>
             {profile_path &&
-            (<div className={!themeStatus?css.actorDetail:css.actorDetailLight}>
+            (<div className={!themeStatus ? css.actorDetail : css.actorDetailLight}>
                     <div className={css.actorPoster}>
                         <img src={actorImages + profile_path} alt={known_for_department}/>
                     </div>

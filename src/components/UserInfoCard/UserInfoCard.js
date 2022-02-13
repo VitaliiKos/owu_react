@@ -20,7 +20,7 @@ const UserInfoCard = ({myFamousActor}) => {
 
     return (
         <div>
-            <div className={!themeStatus?css.mainDetails:css.mainDetailsLight}>
+            <div className={!themeStatus ? css.mainDetails : css.mainDetailsLight}>
                 <div className={css.mainFoto}>
                     <img src={movieImages + profile_path} alt={name}/>
                 </div>
@@ -34,7 +34,7 @@ const UserInfoCard = ({myFamousActor}) => {
                 </div>
             </div>
 
-            <div className={!themeStatus?css.userDescription:css.userDescriptionLight}>
+            <div className={!themeStatus ? css.userDescription : css.userDescriptionLight}>
                 <h3>{biography}</h3>
             </div>
 

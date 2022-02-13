@@ -11,8 +11,10 @@ const initialState = {
     total_results: null,
     movieDetails: null,
     actors: [],
-    myFamousActor:null,
-    themeStatus:true
+    myFamousActor: null,
+    themeStatus: true,
+    hover: 0,
+    rating: 0
 }
 
 let getGenreId;
@@ -31,7 +33,6 @@ export const getByGenre = createAsyncThunk(
         }
     }
 )
-
 
 export const genreGetAll = createAsyncThunk(
     'movieConstructor/genreGetAll',
@@ -83,6 +84,12 @@ const movieSlice = createSlice({
     reducers: {
         chooseTheme: (state) => {
             state.themeStatus = !state.themeStatus
+        },
+        starRating: (state, action) => {
+            state.rating = action.payload
+        },
+        starHover: (state, action) => {
+            state.hover = action.payload
         }
     },
     extraReducers: {
@@ -99,7 +106,6 @@ const movieSlice = createSlice({
             state.error = action.payload
         },
 
-        // ***********************************
         [getByGenre.pending]: (state) => {
             state.status = 'pending'
             state.error = null
@@ -115,7 +121,6 @@ const movieSlice = createSlice({
             state.status = 'rejected'
             state.error = action.payload
         },
-        // ***********************************
         [movieInfo.pending]: (state) => {
             state.status = 'pending'
             state.error = null
@@ -127,7 +132,6 @@ const movieSlice = createSlice({
             state.status = 'rejected'
             state.error = action.payload
         },
-        // ***********************************
         [actorsGetAll.pending]: (state) => {
             state.status = 'pending'
             state.error = null
@@ -139,7 +143,6 @@ const movieSlice = createSlice({
             state.status = 'rejected'
             state.error = action.payload
         },
-        // ***********************************
         [famousActor.pending]: (state) => {
             state.status = 'pending'
             state.error = null
@@ -155,8 +158,7 @@ const movieSlice = createSlice({
     }
 })
 
-
 const movieReducer = movieSlice.reducer
-export const {chooseTheme} = movieSlice.actions
+export const {chooseTheme, starHover, starRating} = movieSlice.actions
 
 export default movieReducer

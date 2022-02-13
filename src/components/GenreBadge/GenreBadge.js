@@ -3,9 +3,9 @@ import {useDispatch, useSelector} from "react-redux";
 import {NavLink} from "react-router-dom";
 
 import {genreGetAll, getByGenre} from "../../store";
-import css from "./genrebadge.module.css";
 import {GenreCard} from "../GenreCard/GenreCard";
 import {MovieList} from "../MovieList/MovieList";
+import css from "./genrebadge.module.css";
 
 const GenreBadge = () => {
     const {genres, genre, themeStatus} = useSelector(state => state['movieReducer'])

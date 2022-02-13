@@ -1,4 +1,4 @@
-import {Route, Routes} from "react-router-dom";
+import {Navigate, Route, Routes} from "react-router-dom";
 
 import {GenreBadge, Layout, MovieInfo} from "./components";
 import {MoviesPage, NotFoundPage, UserInfoPage} from "./pages";
@@ -11,7 +11,7 @@ function App() {
             <div className={css.App}>
                 <Routes>
                     <Route path={'/'} element={<Layout/>}>
-                        {/*<Route index element={<Navigate to={'movies'}/>}/>*/}
+                        <Route index element={<Navigate to={'movies'}/>}/>
                         <Route path={'movies'} element={<MoviesPage/>}>
                             <Route path={''} element={<GenreBadge/>}/>
                             <Route path={':id'} element={<MovieInfo/>}/>
